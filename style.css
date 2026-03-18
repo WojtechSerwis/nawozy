@@ -1,0 +1,130 @@
+/* Podstawowy wygląd */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Inputy */
+input {
+    margin: 5px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 5px;
+    width: 80px;
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+/* Wyniki i historia */
+.result,
+.history-box,
+.summary-box {
+    margin-top: 20px;
+    font-weight: bold;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Przycisk */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Zakładki */
+.tabs button {
+    margin: 5px;
+}
+
+/* Karty zakładek */
+.tab {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* Box z tabelami */
+.box {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Kolorowanie wartości */
+.low {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.correct {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.high {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.warning {
+    color: #ffeb3b;
+}
+
+.excess {
+    color: #f44336;
+}
+
+/* Tabele */
+.box table {
+    width: auto;
+    border-collapse: collapse;
+}
+
+.box table td,
+.box table th {
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Responsywność */
+@media (max-width: 500px) {
+    body {
+        max-width: 95%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .result,
+    .history-box,
+    .summary-box {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+}
