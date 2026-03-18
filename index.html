@@ -9,8 +9,22 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <h2>Kalkulator nawozów – PWA</h2>
-<div id="app"></div>
+<p style="font-size:12px;color:#aaa;">Wartości oparte na nawozach Aquaforest AF</p>
+
+<div class="tabs">
+  <button onclick="showTab('t1')">240L (200L)</button>
+  <button onclick="showTab('t2')">130L (110L)</button>
+  <button onclick="showTab('t3')">72L (60L)</button>
+  <button onclick="showTab('t4')">26L (20L)</button>
+</div>
+
+<div id="t1" class="tab active"></div>
+<div id="t2" class="tab"></div>
+<div id="t3" class="tab"></div>
+<div id="t4" class="tab"></div>
+
 <script src="app.js"></script>
 </body>
 </html>

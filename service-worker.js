@@ -1,7 +1,7 @@
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('calc-v1').then(cache =>
-      cache.addAll(['index.html','app.js','manifest.json','icon-192.png','icon-512.png'])
+      cache.addAll(['index.html','app.js','style.css','manifest.json','icon-192.png','icon-512.png'])
     )
   );
 });
